@@ -129,6 +129,7 @@ func TestConfigWriter_PrintVersionSummary(t *testing.T) {
 				t.Errorf("PrintVersionSummary (%v) did not produce expected err", tt.name)
 			} else if err != nil && !tt.wantErr {
 				t.Errorf("PrintVersionSummary (%v) produced unexpected err: %v", tt.name, err)
+				t.Errorf("PrintVersionSummary (%v) produced unexpected err: %v", tt.name, err)
 			}
 		})
 	}
